@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="789e65ed-b951-4c92-a100-e5803efa6394" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/blocks/intro/__list-item/intro__list-item.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blocks/intro/__list-value/intro__list-value.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blocks/intro/__list/intro__list.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blocks/intro/__paragraph/intro__paragraph.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blocks/intro/__title/intro__title.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/blocks/intro/intro.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/blocks/photo-grid/__item/photo-grid__item.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/blocks/photo-grid/photo-grid.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" afterPath="$PROJECT_DIR$/pages/index.css" />
@@ -27,11 +23,34 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="34" column="107" lean-forward="true" selection-start-line="34" selection-start-column="107" selection-end-line="34" selection-end-column="107" />
+            <state relative-caret-position="487">
+              <caret line="54" column="106" lean-forward="false" selection-start-line="54" selection-start-column="106" selection-end-line="54" selection-end-column="106" />
               <folding>
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo-grid.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blocks/photo-grid/photo-grid.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-272">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo-grid__item.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blocks/photo-grid/__item/photo-grid__item.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,18 +58,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="intro.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blocks/intro/intro.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="660">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -89,14 +98,17 @@
         <option value="$PROJECT_DIR$/blocks/lead/__subtitle/lead__subtitle.css" />
         <option value="$PROJECT_DIR$/blocks/lead/__caption/lead__caption.css" />
         <option value="$PROJECT_DIR$/blocks/intro/paragraph/intro__paragraph.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/pages/index.css" />
         <option value="$PROJECT_DIR$/blocks/intro/intro.css" />
         <option value="$PROJECT_DIR$/blocks/intro/__title/intro__title.css" />
         <option value="$PROJECT_DIR$/blocks/intro/__paragraph/intro__paragraph.css" />
         <option value="$PROJECT_DIR$/blocks/intro/__list/intro__list.css" />
         <option value="$PROJECT_DIR$/blocks/intro/__list-value/intro__list-value.css" />
         <option value="$PROJECT_DIR$/blocks/intro/__list-item/intro__list-item.css" />
+        <option value="$PROJECT_DIR$/blocks/photo-grid/.photo-grid.css" />
+        <option value="$PROJECT_DIR$/pages/index.css" />
+        <option value="$PROJECT_DIR$/blocks/photo-grid/photo-grid.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/blocks/photo-grid/__item/photo-grid__item.css" />
       </list>
     </option>
   </component>
@@ -143,18 +155,6 @@
               <item name="russian-travel" type="b2602c69:ProjectViewProjectNode" />
               <item name="russian-travel" type="462c0819:PsiDirectoryNode" />
               <item name="blocks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="russian-travel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="russian-travel" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="intro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="russian-travel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="russian-travel" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-              <item name="lead" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="russian-travel" type="b2602c69:ProjectViewProjectNode" />
@@ -220,18 +220,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637556892947</updated>
-      <workItem from="1637556895075" duration="17085000" />
+      <workItem from="1637556895075" duration="19804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17085000" />
+    <option name="totallyTimeSpent" value="19804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13643575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16499206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -386,28 +386,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="34" column="107" lean-forward="true" selection-start-line="34" selection-start-column="107" selection-end-line="34" selection-end-column="107" />
-          <folding>
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/lead/lead.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-305">
           <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -464,6 +446,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="54" column="106" lean-forward="false" selection-start-line="54" selection-start-column="106" selection-end-line="54" selection-end-column="106" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/photo-grid/photo-grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/photo-grid/__item/photo-grid__item.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>
