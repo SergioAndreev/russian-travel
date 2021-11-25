@@ -13,7 +13,7 @@
 <body>
   <div class="page" id="app">
     <header class="header">
-        <img class="header__logo" src="images/logo/header-logo.svg" :alt="header_active.header_logo_alt">
+        <img class="header__logo" :src="header_active.header__logo" :alt="header_active.header_logo_alt">
         <ul class="header__lang-links">
             <li><a @click="changeLang(1)" class="header__lang-link" :class="{'header__lang-link_active': header_active.header__lang_link_ru}">Ru</a></li>
             <li><a @click="changeLang(2)" class="header__lang-link" :class="{'header__lang-link_active': header_active.header__lang_link_en}">En</a></li>
@@ -114,9 +114,8 @@
         </section>
         <section class="cover">
             <a class="cover__overlay" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
-                <h2 class="cover__title">До Байкала «на собаках»</h2>
-                <p class="cover__subtitle">По мотивам учебной темы о Транссибе —
-                    путешествие от столицы до Байкала на электричках.</p>
+                <h2 class="cover__title">{{cover_active.cover__title}}</h2>
+                <p class="cover__subtitle">{{cover_active.cover__subtitle}}</p>
             </a>
         </section>
     </main>
@@ -124,23 +123,23 @@
         <nav>
             <ul class="footer__links">
                 <li class="footer__link-item">
-                    <a href="https://yandex.ru/maps" class="footer__link" target="_blank">Карты</a>
+                    <a href="https://yandex.ru/maps" class="footer__link" target="_blank">{{footer__links_active.footer__link_0}}</a>
                 </li>
                 <li class="footer__link-item">
-                    <a href="https://yandex.ru/pogoda" class="footer__link" target="_blank">Погода</a>
+                    <a href="https://yandex.ru/pogoda" class="footer__link" target="_blank">{{footer__links_active.footer__link_1}}</a>
                 </li>
                 <li class="footer__link-item">
-                    <a href="https://rasp.yandex.ru" class="footer__link" target="_blank">Расписание</a>
+                    <a href="https://rasp.yandex.ru" class="footer__link" target="_blank">{{footer__links_active.footer__link_2}}</a>
                 </li>
                 <li class="footer__link-item">
-                    <a href=" https://calendar.yandex.ru" class="footer__link" target="_blank">Календарь</a>
+                    <a href=" https://calendar.yandex.ru" class="footer__link" target="_blank">{{footer__links_active.footer__link_3}}</a>
                 </li>
                 <li class="footer__link-item">
-                    <a href="https://travel.yandex.ru" class="footer__link" target="_blank">Путешествия</a>
+                    <a href="https://travel.yandex.ru" class="footer__link" target="_blank">{{footer__links_active.footer__link_4}}</a>
                 </li>
             </ul>
         </nav>
-        <p class="footer__copyright">&copy; 2021. Андреев Сергей</p>
+        <p class="footer__copyright">&copy; 2021. {{footer__links_active.footer__copyright}}</p>
       </footer>
   </div>
   <script>
@@ -151,16 +150,19 @@
                   title_ru: 'Путешествие по России',
                   title_en: 'Travel across Russia',
                   header_active: {
+                      header__logo: 'images/logo/header-logo_ru.svg',
                       header_logo_alt: 'логотип',
                       header__lang_link_ru: true,
                       header__lang_link_en: false
                   },
                   header_ru: {
+                      header__logo: 'images/logo/header-logo_ru.svg',
                       header_logo_alt: 'логотип',
                       header__lang_link_ru: true,
                       header__lang_link_en: false
                   },
                   header_en: {
+                      header__logo: 'images/logo/header-logo_en.svg',
                       header_logo_alt: 'logo',
                       header__lang_link_ru: false,
                       header__lang_link_en: true
@@ -278,7 +280,7 @@
                       place__title_2: 'Кольский',
                       place__image_alt_2: 'кольский',
                       place__paragraph_2_1: 'Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.',
-                      place__paragraph_2_2: 'Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.'
+                      place__paragraph_2_2: 'Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.',
                       place__title_3: 'Алтай',
                       place__image_alt_3: 'алтай',
                       place__paragraph_3_1: 'Алтай — одно из красивейших мест в России. В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.',
@@ -299,7 +301,7 @@
                       place__title_2: 'Кольский',
                       place__image_alt_2: 'кольский',
                       place__paragraph_2_1: 'Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.',
-                      place__paragraph_2_2: 'Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.'
+                      place__paragraph_2_2: 'Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.',
                       place__title_3: 'Алтай',
                       place__image_alt_3: 'алтай',
                       place__paragraph_3_1: 'Алтай — одно из красивейших мест в России. В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.',
@@ -319,19 +321,56 @@
                       place__paragraph_1_2: 'The Kaliningrad region does not end there. For the traveler and explorer, in the same neighborhood - the westernmost point of Russia, the Baltic Spit - and the German heritage of the placer of small coastal cities. The atmosphere of these places excludes the hustle and bustle, plunging into the tranquility of nature and the smell of the steel, cool sea.',
                       place__title_2: 'Kola Peninsula',
                       place__image_alt_2: 'Kola Peninsula',
-                      place__paragraph_2_1: 'Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.',
-                      place__paragraph_2_2: 'Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.'
-                      place__title_3: 'Алтай',
-                      place__image_alt_3: 'алтай',
-                      place__paragraph_3_1: 'Алтай — одно из красивейших мест в России. В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.',
-                      place__paragraph_3_2: 'Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.',
-                      place__title_4: 'Зимний Байкал',
-                      place__image_alt_4: 'зимний байкал',
-                      place__paragraph_4_1: 'Всем известен Байкал как крупнейшее озеро в мире. Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в России.',
-                      place__paragraph_4_2: 'Конечно, это всё так. Но Байкал ещё идеальное место для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.',
-                      place__title_5: 'Карелия',
-                      place__image_alt_5: 'карелия',
-                      place__paragraph_5_1: 'Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.'
+                      place__paragraph_2_1: 'Almost the entire peninsula is located beyond the Arctic Circle. Sami tundra, from which to the south - the taiga, and to the north - the Arctic Ocean, pretending to be the Barents Sea.',
+                      place__paragraph_2_2: 'You may have watched Zvyagintsev and even heard the history of the Arctic festival in Teriberka. Perhaps the word "Khibiny" did not remain under the snow of school memories of geography lessons. Perhaps you were not interested in a super-deep well penetrating the earth\'s crust, and apatites have long covered you with apathy. But your dream of seeing the northern lights begins to come true with a ticket to Murmansk.',
+                      place__title_3: 'Altai',
+                      place__image_alt_3: 'Altai',
+                      place__paragraph_3_1: 'Altai is one of the most beautiful places in Russia. Primarily because of the mountains: if you go along the ridge, you will see slopes covered with pine trees, mountain rivers and lakes. And if you open the windows in the car, you can get acquainted with the invisible miracle of these places - the mountain air.',
+                      place__paragraph_3_2: 'The climate in Altai is moderate, so it is best to go here in summer. This way you will see all the variety of local flora and fauna. Elk roam the forests of Altai, eagles fly over the ridges, and roe deer graze on the plains. And the famous Pallas\' cat are also inhabitants of the Altai Territory.',
+                      place__title_4: 'Winter Baikal',
+                      place__image_alt_4: 'winter baikal',
+                      place__paragraph_4_1: 'Everyone knows Baikal as the largest lake in the world. Many also know that this is the largest source of fresh water and one of the most beautiful places in Russia.',
+                      place__paragraph_4_2: 'Of course, this is all true. But Baikal is still an ideal place for skiing competitions. This is a sport where the skier ties himself to the motorcycle and the tandem tries to develop as fast as possible on the ice. In March 2019, a world record of 197.011 km / h was set at the Baikal Mile festival.',
+                      place__title_5: 'Karelia',
+                      place__image_alt_5: 'Karelia',
+                      place__paragraph_5_1: 'Siberia ends not in the Urals, but in Karelia: the Siberian larch that forms the taiga does not grow west of Vodlozero. But here it reaches 30 meters - the forests of the Karelian national parks have never known an ax because of impenetrable swamps. Some pines are more than half a millennium old. Touch a living creature that has seen the sun before Ivan the Terrible saw it. In virginity\n' +
+                      'In this forest for a hundred kilometers you will not find a trail. And on rare paths, trees a couple of meters from the ground are marked with bear claws. So that everyone knows who is the boss here.'
+                  },
+                  cover_active: {
+                      cover__title: 'До Байкала «на собаках»',
+                      cover__subtitle: 'По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.'
+                  },
+                  cover_ru: {
+                      cover__title: 'До Байкала «на собаках»',
+                      cover__subtitle: 'По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.'
+                  },
+                  cover_en: {
+                      cover__title: 'To Baikal "on dogs"',
+                      cover__subtitle: 'Based on the educational topic about the Transsib - a journey from the capital to Lake Baikal by train.'
+                  },
+                  footer__links_active:{
+                      footer__link_0: 'Карты',
+                      footer__link_1: 'Погода',
+                      footer__link_2: 'Расписание',
+                      footer__link_3: 'Календарь',
+                      footer__link_4: 'Путешествия',
+                      footer__copyright: 'Андреев Сергей'
+                  },
+                  footer__links_ru:{
+                      footer__link_0: 'Карты',
+                      footer__link_1: 'Погода',
+                      footer__link_2: 'Расписание',
+                      footer__link_3: 'Календарь',
+                      footer__link_4: 'Путешествия',
+                      footer__copyright: 'Андреев Сергей'
+                  },
+                  footer__links_en:{
+                      footer__link_0: 'Maps',
+                      footer__link_1: 'Weather',
+                      footer__link_2: 'Schedule',
+                      footer__link_3: 'Calendar',
+                      footer__link_4: 'Trips',
+                      footer__copyright: 'Andreev Sergey'
                   }
               },
               methods: {
@@ -342,12 +381,18 @@
                          this.lead_active = this.lead_ru;
                          this.intro_active = this.intro_ru;
                          this.photo_grid_active = this.photo_grid_ru;
+                         this.places_active = this.places_ru;
+                         this.cover_active = this.cover_ru;
+                         this.footer__links_active = this.footer__links_ru;
                      } else if (lang === 2) {
                          this.title_active = this.title_en;
                          this.header_active = this.header_en;
                          this.lead_active = this.lead_en;
                          this.intro_active = this.intro_en;
                          this.photo_grid_active = this.photo_grid_en;
+                         this.places_active = this.places_en;
+                         this.cover_active = this.cover_en;
+                         this.footer__links_active = this.footer__links_en;
                      }
                   }
               }
