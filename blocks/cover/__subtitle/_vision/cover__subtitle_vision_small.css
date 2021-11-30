@@ -1,0 +1,9 @@
+.cover__subtitle_vision_small {
+        display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .cover__subtitle_vision_small {
+        display: block;
+    }
+}
