@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: minmax(320px, 460px) minmax(288px, 484px);
     grid-gap: 48px 40px;
-    overflow: hidden;
 }
 
 .place:last-of-type {
@@ -25,7 +24,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     .place {
         margin-bottom:50px;
         grid-template-columns: 1fr;
